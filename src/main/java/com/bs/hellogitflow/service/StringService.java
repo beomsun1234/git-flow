@@ -8,6 +8,8 @@ public class StringService {
      * 스트링 이어 붙이기
      */
     public String appendString(String a, String b){
-        return a+b;
+        StringBuffer str = new StringBuffer(a);
+        str.append(b);
+        return str.toString();
     }
 }
